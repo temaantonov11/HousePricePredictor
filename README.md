@@ -18,7 +18,7 @@ pip install -r requirements.txt
 For Windows
 ```
 python -m venv .venv
-.venv/bin/activate
+.venv\Scripts\activate
 pip install -r requirements.txt
 ```
 4. You may run bot following command:
