@@ -25,10 +25,11 @@ pip install -r requirements.txt
 
 For Linux
 ```
-python3 Bot/run.py
+cd Bot
+python3 run.py
 ```
 For Windows
 ```
-python Bot/run.py
+python run.py
 ```
 
