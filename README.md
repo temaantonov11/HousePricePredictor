@@ -22,6 +22,7 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 4. You may run bot following command:
+
 For Linux
 ```
 python3 Bot/run.py
