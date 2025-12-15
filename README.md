@@ -1,7 +1,7 @@
 ## HOUSE PRICE PREDICTOR
 
 House Price Predictor is a machine learning application that predicts real estate prices in Moscow based on user-specified parameters. 
-Users interact with the application through a Telegram bot @housepricepredictor_bot.
+Users interact with the application through a Telegram bot `@housepricepredictor_bot`.
 
 ### HOW RUN APP
 
