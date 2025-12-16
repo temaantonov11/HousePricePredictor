@@ -3,9 +3,6 @@ import torch
 import torch.nn as nn
 import pandas as pd
 import numpy as np
-import random
-
-from src.metro import moscow_metro_stations
 
 class ApartmentPriceNet(nn.Module):
     def __init__(self, input_dim):
@@ -67,27 +64,6 @@ def predict_apartment_price(
     Returns:
         dict: Словарь с предсказанной ценой и информацией
     """
-
-    if not living_area:
-        living_area = random.uniform(0, area)
-    
-    if not kitchen_area:
-        kitchen_area = random.uniform(0, area - living_area)
-
-    if not number_of_floors:
-        number_of_floors = random.randint(1, 50)
-    
-    if not floor:
-        floor = random.randint(1, number_of_floors)
-
-    if not minutes_to_metro:
-        minutes_to_metro = random.randint(1, 30)
-
-    if not apartment_type:
-        apartment_type = random.choice(['Primary', 'Secondary'])
-
-    if not metro_station:
-        metro_station = random.choice(moscow_metro_stations)
 
     try:
         with open(scaler_x_path, 'rb') as f:
